@@ -204,3 +204,10 @@ muteBtn.addEventListener('click', () => {
     isMuted = !isMuted
     muteBtn.textContent = isMuted ? '🔇 Silenciado' : '🔊 Sonido';
 })
+
+document.addEventListener('keydown', (e) => {
+    if (e.key.toLowerCase() === 'm') {
+        isMuted = !isMuted;
+        muteBtn.textContent = isMuted ? '🔇 Silenciado' : '🔊 Sonido';
+    }
+});
