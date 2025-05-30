@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Llamamos el archivo css -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Snake</title>
+</head>
+<body>
+    <div id="startScreen">
+        <h1>Snake Game</h1>
+        <button id="startButton">Empezar</button>
+    </div>
+
+    <div id="scoreboard">
+        <span id="scoreText">Puntuación: 0 | Máxima: 0</span>
+        <button id="muteBtn">🔊 Sonido</button>
+    </div>
+    
+    <!-- Creamos el "lienzo" donde ira nuestro juego -->
+    <canvas id="game" width="400" height="400" style="background:#222;"></canvas>
+
+    <div id="gameOverScreen">
+        <h1>Game Over</h1>
+        <button id="retryBtn">Jugar otra vez</button>
+    </div>
+    
+    <!-- Llamamos al audio ANTES del script-->
+    <audio id="eatSound" src="eat.mp3" preload="auto"></audio>
+    <!-- Llamamos el archivo js -->
+    <script src="snake.js"></script>
+    
+    
+</body>
+</html>
